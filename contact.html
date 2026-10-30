@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en-ZA">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us | Church Square Stationers, Pretoria</title>
+    <meta name="description" content="Contact Church Square Stationers in Pretoria Central. Send a message, find us on the map and get directions to our Paul Kruger Street shop.">
+    <meta name="keywords" content="contact stationery shop Pretoria, Pretoria Central printing shop address, Paul Kruger Street stationers, directions">
+    <meta name="author" content="Church Square Stationers">
+    <meta name="robots" content="index, follow">
+    <meta name="theme-color" content="#7A1F2B">
+    <link rel="canonical" href="https://church-square-stationers.netlify.app/contact.html">
+    <link rel="icon" href="assets/images/favicon.svg" type="image/svg+xml">
+
+    <!-- Open Graph / social sharing -->
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Church Square Stationers">
+    <meta property="og:locale" content="en_ZA">
+    <meta property="og:title" content="Contact Us | Church Square Stationers, Pretoria">
+    <meta property="og:description" content="Contact Church Square Stationers in Pretoria Central. Send a message, find us on the map and get directions to our Paul Kruger Street shop.">
+    <meta property="og:url" content="https://church-square-stationers.netlify.app/contact.html">
+    <meta property="og:image" content="https://church-square-stationers.netlify.app/assets/images/church-square-stationers-share.png">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:image:alt" content="Church Square Stationers - Stationery, Printing and Binding in Pretoria Central">
+    <meta name="twitter:card" content="summary_large_image">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="stylesheet" href="assets/vendor/leaflet/leaflet.css">
+</head>
+<body class="bg-gray-50">
+<a href="#main" class="skip-link">Skip to main content</a>
+
+<nav class="bg-maroon text-white sticky top-0 z-50 shadow-lg" aria-label="Main navigation">
+    <div class="max-w-7xl mx-auto px-4 py-4 flex items-center justify-between">
+        <a href="index2.html" class="text-xl md:text-2xl font-bold text-gold">
+            <span aria-hidden="true">✒️</span> Church Square Stationers
+        </a>
+        <button id="mobile-menu-btn" class="md:hidden text-2xl w-10 h-10" aria-label="Open menu" aria-expanded="false" aria-controls="mobile-menu">☰</button>
+        <div class="hidden md:flex items-center gap-6 font-semibold">
+            <a href="index2.html" class="hover:text-gold">Home</a>
+            <a href="products.html" class="hover:text-gold">Products</a>
+            <a href="service.html" class="hover:text-gold">Services</a>
+            <a href="about.html" class="hover:text-gold">About Us</a>
+            <a href="contact.html" class="text-gold" aria-current="page">Contact</a>
+            <a href="enquiry.html" class="bg-gold text-maroon px-4 py-2 rounded font-bold hover:bg-yellow-400">Get a Quote</a>
+        </div>
+    </div>
+    <div id="mobile-menu" class="hidden md:hidden px-4 pb-4 space-y-1">
+        <a class="block py-2" href="index2.html">Home</a>
+        <a class="block py-2" href="products.html">Products</a>
+        <a class="block py-2" href="service.html">Services</a>
+        <a class="block py-2" href="about.html">About Us</a>
+        <a class="block py-2 text-gold" href="contact.html" aria-current="page">Contact</a>
+        <a class="block py-2 text-gold font-bold" href="enquiry.html">Get a Quote</a>
+    </div>
+</nav>
+<nav aria-label="Breadcrumb" class="max-w-6xl mx-auto px-4 pt-6 text-sm text-gray-600">
+    <ol class="flex gap-2">
+        <li><a class="underline hover:text-maroon" href="index2.html">Home</a></li>
+        <li aria-hidden="true">/</li>
+        <li aria-current="page">Contact</li>
+    </ol>
+</nav>
+
+<main id="main" class="max-w-6xl mx-auto px-4 py-10">
+    <h1 class="text-3xl md:text-5xl font-bold text-maroon mb-3">Contact Church Square Stationers</h1>
+    <p class="text-gray-600 max-w-3xl mb-8">
+        Have a question about stationery, printing or an existing order? Send us a message below.
+        Want a price for a print job? Use our <a class="underline text-maroon font-semibold" href="enquiry.html">quote form</a> for an instant estimate.
+    </p>
+
+    <div class="grid lg:grid-cols-2 gap-8 items-start">
+        <section aria-labelledby="form-heading" class="bg-white rounded-xl shadow border border-gray-200 p-6 md:p-8">
+            <h2 id="form-heading" class="text-2xl font-bold text-maroon mb-4">Send us a message</h2>
+            <div id="contact-status" role="status" aria-live="polite" class="mb-4"></div>
+            <form id="contact-form" class="relative space-y-4" novalidate action="mailto:info@churchsquarestationers.co.za" method="post" enctype="text/plain">
+        <div role="alert" data-error-summary class="hidden bg-red-50 border border-red-300 text-red-800 rounded-lg p-3 font-semibold"></div>
+        <div>
+            <label for="con-name" class="block font-semibold mb-1">Full name <span class="text-red-700" aria-hidden="true">*</span></label>
+            <input id="con-name" name="name" type="text" class="field-input" required autocomplete="name" maxlength="60" aria-describedby="con-name-error">
+            <p id="con-name-error" class="field-error" aria-live="polite"></p>
+        </div>
+        <div>
+            <label for="con-email" class="block font-semibold mb-1">Email address <span class="text-red-700" aria-hidden="true">*</span></label>
+            <input id="con-email" name="email" type="email" class="field-input" required autocomplete="email" maxlength="100" aria-describedby="con-email-error">
+            <p id="con-email-error" class="field-error" aria-live="polite"></p>
+        </div>
+        <div>
+            <label for="con-phone" class="block font-semibold mb-1">Phone number <span class="text-gray-500 font-normal text-sm">(optional)</span></label>
+            <input id="con-phone" name="phone" type="tel" class="field-input" autocomplete="tel" inputmode="tel" pattern="(\+27|0)[1-9][0-9 \-]{8,12}" maxlength="20" aria-describedby="con-phone-hint con-phone-error">
+            <p id="con-phone-hint" class="text-xs text-gray-500 mt-1">Optional. For example 082 123 4567</p>
+            <p id="con-phone-error" class="field-error" aria-live="polite"></p>
+        </div>
+        <div>
+            <label for="con-type" class="block font-semibold mb-1">Type of message <span class="text-red-700" aria-hidden="true">*</span></label>
+            <select id="con-type" name="type" class="field-input" required aria-describedby="con-type-error"><option value="">Choose a message type</option><option value="General question">General question</option><option value="Product enquiry">Product enquiry</option><option value="Order follow-up">Order follow-up</option><option value="Feedback">Feedback or compliment</option><option value="Complaint">Complaint</option><option value="Business account">Business or government account</option></select>
+            <p id="con-type-error" class="field-error" aria-live="polite"></p>
+        </div>
+        <div>
+            <label for="con-subject" class="block font-semibold mb-1">Subject <span class="text-red-700" aria-hidden="true">*</span></label>
+            <input id="con-subject" name="subject" type="text" class="field-input" required maxlength="80" aria-describedby="con-subject-error">
+            <p id="con-subject-error" class="field-error" aria-live="polite"></p>
+        </div>
+        <div>
+            <label for="con-message" class="block font-semibold mb-1">Your message <span class="text-red-700" aria-hidden="true">*</span></label>
+            <textarea id="con-message" name="message" rows="6" maxlength="1000" required class="field-input" aria-describedby="con-message-count con-message-error"></textarea>
+            <p id="con-message-count" class="text-xs text-gray-500 mt-1"></p>
+            <p id="con-message-error" class="field-error" aria-live="polite"></p>
+        </div>
+        <div class="absolute -left-[9999px]" aria-hidden="true">
+            <label for="con-website">Leave this field empty</label>
+            <input id="con-website" name="website" type="text" tabindex="-1" autocomplete="off">
+        </div>
+        <div>
+            <label class="flex items-start gap-3 text-sm">
+                <input id="con-consent" name="consent" type="checkbox" class="mt-1 h-5 w-5 accent-[#7A1F2B]" required aria-describedby="con-consent-error">
+                <span>I agree that Church Square Stationers may use my details to reply to this message.</span>
+            </label>
+            <p id="con-consent-error" class="field-error" aria-live="polite"></p>
+        </div>
+                <button id="con-submit" type="submit" class="w-full bg-maroon text-white font-bold py-3 rounded-lg hover:bg-red-900 flex items-center justify-center gap-2">Prepare my email</button>
+                <p class="text-xs text-gray-500 text-center"><span class="text-red-700">*</span> Required field</p>
+            </form>
+            <div id="email-preview" class="hidden" aria-live="polite"></div>
+        </section>
+
+        <section aria-labelledby="find-heading" class="space-y-4">
+            <div class="bg-white rounded-xl shadow border border-gray-200 p-6">
+                <h2 id="find-heading" class="text-2xl font-bold text-maroon mb-3">Find us</h2>
+                <address class="not-italic text-gray-700 space-y-1">
+                    <p><strong>Church Square Stationers</strong></p>
+                    <p>Paul Kruger Street, Pretoria Central</p>
+                    <p>Gauteng, South Africa</p>
+                    <p>Email: <a class="underline text-maroon font-semibold" href="mailto:info@churchsquarestationers.co.za">info@churchsquarestationers.co.za</a></p>
+                </address>
+            </div>
+            <div class="bg-white rounded-xl shadow border border-gray-200 p-3">
+                <div id="map" class="h-80 rounded-lg" role="region" aria-label="Map showing the location of Church Square Stationers in Pretoria Central"></div>
+                <p id="map-fallback" class="hidden p-4 text-sm text-gray-700">The map could not load. Use the directions link below instead.</p>
+                <div class="flex flex-col sm:flex-row sm:items-center gap-3 p-3">
+                    <button id="locate-btn" type="button" class="bg-gold text-maroon font-bold px-4 py-2 rounded-lg hover:bg-yellow-400">How far am I?</button>
+                    <a class="underline text-maroon font-semibold" href="https://www.google.com/maps/dir/?api=1&amp;destination=-25.74611,28.18806" target="_blank" rel="noopener noreferrer">Get directions (opens in a new tab)</a>
+                </div>
+                <p id="distance-output" class="px-3 pb-3 text-sm text-gray-700" role="status" aria-live="polite"></p>
+            </div>
+        </section>
+    </div>
+</main>
+
+<footer class="bg-gray-900 text-gray-300 py-10">
+    <div class="max-w-6xl mx-auto px-4 grid gap-8 md:grid-cols-3 text-center md:text-left">
+        <div>
+            <p class="font-bold text-white text-lg">Church Square Stationers</p>
+            <address class="not-italic text-sm mt-2">Paul Kruger Street, Pretoria Central<br>Gauteng, South Africa</address>
+            <p class="text-sm mt-2"><a class="underline hover:text-gold" href="mailto:info@churchsquarestationers.co.za">info@churchsquarestationers.co.za</a></p>
+        </div>
+        <nav aria-label="Footer navigation">
+            <p class="font-bold text-white">Explore</p>
+            <ul class="mt-2 space-y-1 text-sm"><li><a class="hover:text-gold" href="index2.html">Home</a></li><li><a class="hover:text-gold" href="products.html">Products</a></li><li><a class="hover:text-gold" href="service.html">Services</a></li><li><a class="hover:text-gold" href="about.html">About Us</a></li><li><a class="hover:text-gold" href="contact.html">Contact</a></li><li><a class="hover:text-gold" href="enquiry.html">Get a Quote</a></li></ul>
+        </nav>
+        <div>
+            <p class="font-bold text-white">Spread the word</p>
+            <p class="text-sm mt-2">Know someone who needs printing or stationery?</p>
+            <button id="share-btn" type="button" class="mt-3 bg-gold text-maroon font-bold px-4 py-2 rounded hover:bg-yellow-400">Share this page</button>
+            <p id="share-status" class="text-xs mt-2" role="status"></p>
+        </div>
+    </div>
+    <p class="text-center text-sm mt-8">&copy; <span data-year>2026</span> Church Square Stationers. All rights reserved.</p>
+</footer>
+<script src="assets/vendor/leaflet/leaflet.js" defer></script>
+<script src="assets/js/main.js" defer></script>
+<script src="data/fallback-data.js" defer></script>
+<script src="assets/js/forms.js" defer></script>
+</body>
+</html>
