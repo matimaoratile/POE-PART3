@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" width="800" height="600" role="img" aria-labelledby="t">
+  <title id="t">Row of coloured lever arch files on a shelf</title>
+  <defs><linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#F4F4F5"/><stop offset="1" stop-color="#E4E4E7"/></linearGradient></defs>
+  <rect width="800" height="600" fill="url(#bg)"/>
+
+  <rect x="190" y="190" width="56" height="240" rx="4" fill="#7A1F2B"/><rect x="200" y="220" width="36" height="60" rx="3" fill="#ffffffcc"/><circle cx="218" cy="205" r="6" fill="#00000040"/><rect x="260" y="190" width="56" height="240" rx="4" fill="#2f5d8a"/><rect x="270" y="220" width="36" height="60" rx="3" fill="#ffffffcc"/><circle cx="288" cy="205" r="6" fill="#00000040"/><rect x="330" y="190" width="56" height="240" rx="4" fill="#2f7d4f"/><rect x="340" y="220" width="36" height="60" rx="3" fill="#ffffffcc"/><circle cx="358" cy="205" r="6" fill="#00000040"/><rect x="400" y="190" width="56" height="240" rx="4" fill="#1f2937"/><rect x="410" y="220" width="36" height="60" rx="3" fill="#ffffffcc"/><circle cx="428" cy="205" r="6" fill="#00000040"/><rect x="470" y="190" width="56" height="240" rx="4" fill="#7A1F2B"/><rect x="480" y="220" width="36" height="60" rx="3" fill="#ffffffcc"/><circle cx="498" cy="205" r="6" fill="#00000040"/><rect x="540" y="190" width="56" height="240" rx="4" fill="#D4AF37"/><rect x="550" y="220" width="36" height="60" rx="3" fill="#ffffffcc"/><circle cx="568" cy="205" r="6" fill="#00000040"/>
+  <rect x="160" y="430" width="500" height="16" rx="4" fill="#8b5e3c"/>
+  <rect x="160" y="446" width="500" height="10" fill="#00000022"/>
+
+</svg>
