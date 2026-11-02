@@ -1,0 +1,25 @@
+{
+  "_note": "Illustrative rates for the Part 3 assessment. Replace with the shop's real prices. All amounts are in South African Rand (ZAR) and include VAT.",
+  "currency": "R",
+  "services": {
+    "bw-print":     { "label": "Black & white printing", "perPage": 0.80, "minCharge": 5 },
+    "colour-print": { "label": "Colour printing",        "perPage": 4.50, "minCharge": 10 },
+    "copying":      { "label": "Photocopying (black & white)", "perPage": 0.60, "minCharge": 5 }
+  },
+  "paperSizeMultiplier": { "A4": 1, "A3": 2 },
+  "doubleSidedFactor": 0.9,
+  "binding": {
+    "none":   { "label": "No binding",                  "perCopy": 0 },
+    "staple": { "label": "Stapled",                     "perCopy": 2 },
+    "spiral": { "label": "Spiral (plastic comb) binding", "perCopy": 35 },
+    "thermal":{ "label": "Thermal binding",             "perCopy": 45 },
+    "hard":   { "label": "Hardcover binding",           "perCopy": 180 }
+  },
+  "studentDiscount": 0.10,
+  "expressSurcharge": 0.30,
+  "standardWorkingDays": 2,
+  "largeJobWorkingDays": 3,
+  "largeJobSheets": 2000,
+  "expressMaxSheets": 1000,
+  "expressCutoffHour": 14
+}
