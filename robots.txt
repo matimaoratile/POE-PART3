@@ -1,0 +1,11 @@
+# robots.txt for Church Square Stationers
+# Tells search engine crawlers which parts of the site they may visit.
+
+User-agent: *
+Allow: /
+Disallow: /src/
+Disallow: /node_modules/
+Disallow: /404.html
+
+# Replace the address below with your real deployed URL
+Sitemap: https://churchsquarestationaries.netlify.app/sitemap.xml

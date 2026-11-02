@@ -1,0 +1,13 @@
+{
+  "name": "church-square-stationers",
+  "version": "3.0.0",
+  "private": true,
+  "description": "Church Square Stationers website (Part 3)",
+  "scripts": {
+    "build:css": "tailwindcss -c tailwind.config.js -i src/input.css -o assets/css/styles.css --minify",
+    "watch:css": "tailwindcss -c tailwind.config.js -i src/input.css -o assets/css/styles.css --watch"
+  },
+  "devDependencies": {
+    "tailwindcss": "^3.4.17"
+  }
+}

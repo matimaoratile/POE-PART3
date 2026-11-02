@@ -1,0 +1,3 @@
+# Netlify redirects.
+# Show the home page when someone visits the bare domain (the home page file is index2.html).
+/   /index2.html   200
