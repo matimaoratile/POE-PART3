@@ -1,0 +1,115 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ==========================================================
+   Church Square Stationers - custom styles (Part 3)
+   Compiled with: npm run build:css  ->  assets/css/styles.css
+   ========================================================== */
+
+html { scroll-behavior: smooth; }
+body { font-family: 'Open Sans', sans-serif; color: #333; }
+h1, h2, h3 { font-family: 'Merriweather', serif; }
+
+/* ---------- Accessibility helpers ---------- */
+.skip-link {
+  position: absolute;
+  left: 1rem;
+  top: -4rem;
+  z-index: 100;
+  background: #D4AF37;
+  color: #7A1F2B;
+  font-weight: 700;
+  padding: .6rem 1rem;
+  border-radius: .5rem;
+  transition: top .2s ease;
+}
+.skip-link:focus { top: 1rem; }
+
+:focus-visible { outline: 3px solid #D4AF37; outline-offset: 2px; }
+
+/* ---------- Scroll-reveal animation ---------- */
+.reveal {
+  opacity: 0;
+  transform: translateY(24px);
+  transition: opacity .6s ease, transform .6s ease;
+  transition-delay: var(--reveal-delay, 0ms);
+}
+.reveal.is-visible { opacity: 1; transform: none; }
+
+/* ---------- Accordion (FAQ) ---------- */
+.accordion-panel {
+  display: grid;
+  grid-template-rows: 0fr;
+  transition: grid-template-rows .3s ease;
+}
+.accordion-panel[data-open="true"] { grid-template-rows: 1fr; }
+.accordion-inner { overflow: hidden; visibility: hidden; transition: visibility 0s linear .3s; }
+.accordion-panel[data-open="true"] .accordion-inner { visibility: visible; transition-delay: 0s; }
+.accordion-icon { transition: transform .3s ease; }
+.accordion-trigger[aria-expanded="true"] .accordion-icon { transform: rotate(45deg); }
+
+/* ---------- Tabs ---------- */
+.tab-btn[aria-selected="true"] { background: #7A1F2B; color: #fff; border-color: #7A1F2B; }
+.tab-panel { animation: panelIn .35s ease; }
+@keyframes panelIn {
+  from { opacity: 0; transform: translateY(8px); }
+  to   { opacity: 1; transform: none; }
+}
+
+/* ---------- Modal + lightbox ---------- */
+.overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 60;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+  background: rgba(17, 24, 39, .75);
+  opacity: 0;
+  transition: opacity .2s ease;
+}
+.overlay.hidden { display: none; }
+.overlay.is-open { opacity: 1; }
+.overlay-box { transform: scale(.95); transition: transform .2s ease; }
+.overlay.is-open .overlay-box { transform: none; }
+
+/* ---------- Cards ---------- */
+.card-hover { transition: transform .2s ease, box-shadow .2s ease; }
+.card-hover:hover { transform: translateY(-4px); }
+
+/* ---------- Forms ---------- */
+.field-input {
+  width: 100%;
+  border: 1px solid #d1d5db;
+  border-radius: .5rem;
+  padding: .65rem .85rem;
+  background: #fff;
+}
+.field-input:focus { border-color: #7A1F2B; outline: 2px solid #D4AF37; outline-offset: 0; }
+.field-input[aria-invalid="true"] { border-color: #b91c1c; background: #fef2f2; }
+.field-error { color: #b91c1c; font-size: .85rem; margin-top: .3rem; min-height: 1.1rem; }
+
+.spinner {
+  width: 1.1rem; height: 1.1rem;
+  border: 3px solid rgba(255, 255, 255, .4);
+  border-top-color: #fff;
+  border-radius: 50%;
+  display: inline-block;
+  animation: spin .8s linear infinite;
+}
+@keyframes spin { to { transform: rotate(360deg); } }
+
+.result-in { animation: panelIn .4s ease; }
+
+/* ---------- Map ---------- */
+#map { z-index: 0; }
+
+/* ---------- Respect reduced-motion preferences ---------- */
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  .reveal, .tab-panel, .result-in, .card-hover, .overlay, .overlay-box,
+  .accordion-panel, .accordion-icon { transition: none !important; animation: none !important; }
+  .reveal { opacity: 1; transform: none; }
+}
